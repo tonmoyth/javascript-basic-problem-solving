@@ -42,5 +42,19 @@ function checkPalindrome(value){
         return false
     }
 }
-const result = checkPalindrome('madam');
+// const result = checkPalindrome('madam');
+// console.log(result);
+
+// Find the Maximum Number
+const findMaxNumber = (value) => {
+    let maxNum = 0;
+    for(let i = 0; i < value.length; i++){
+        if(value[i] > maxNum){
+            maxNum = value[i]
+        }
+    }
+    return maxNum;
+}
+
+const result = findMaxNumber([23,43,22,33,22,12,33]);
 console.log(result);
