@@ -25,5 +25,22 @@ function countVowels (value){
     }
     return vowelNumber
 }
-const result = countVowels(name);
-console.log(result)
+// const result = countVowels(name);
+// console.log(result)
+
+// Check for Palindrome
+
+function checkPalindrome(value){
+    let reversValue = '';
+    for(let i = value.length -1; i >= 0; i--){
+        reversValue += value[i]
+       
+    }
+    if(value === reversValue){
+        return true
+    }else{
+        return false
+    }
+}
+const result = checkPalindrome('madam');
+console.log(result);
