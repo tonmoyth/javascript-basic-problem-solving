@@ -56,5 +56,18 @@ const findMaxNumber = (value) => {
     return maxNum;
 }
 
-const result = findMaxNumber([23,43,22,33,22,12,33]);
+// const result = findMaxNumber([23,43,22,33,22,12,33]);
+// console.log(result);
+
+// Remove Duplicates from an Array
+const removeDuplicate = (value) => {
+    const noDuplicate = [];
+    for(let i = 0; i < value.length; i++){
+        if(!noDuplicate.includes(value[i])){
+            noDuplicate.push(value[i])
+        }
+    }
+    return noDuplicate;
+}
+const result = removeDuplicate([2,3,3,2,4]);
 console.log(result);
