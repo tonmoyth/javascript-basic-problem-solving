@@ -82,3 +82,25 @@ function sumNumber (value){
 }
 // const result = sumNumber([11,3,33,22,44]);
 // console.log(result)
+
+// Find Even Numbers in an Array
+function findEven (value){
+    let evenNum = []
+    for(let i = 0; i < value.length; i++){
+        if(value[i] % 2 === 0){
+            evenNum.push(value[i])
+        }
+    }
+    return evenNum;
+}
+// const result = findEven([1,3,2,4,3,22,44]);
+// console.log(result)
+
+// Capitalize First Letter of Each Word
+const capitalize = (value) => {
+    const valueSplit = value.split(' ');
+    const res = valueSplit.map(v => v.charAt(0).toUpperCase() + v.slice(1))
+    return res.join(' ')
+}
+const result = capitalize('nurislam hasan tonmoy');
+console.log(result)
