@@ -69,5 +69,16 @@ const removeDuplicate = (value) => {
     }
     return noDuplicate;
 }
-const result = removeDuplicate([2,3,3,2,4]);
-console.log(result);
+// const result = removeDuplicate([2,3,3,2,4]);
+// console.log(result);
+
+// Sum of All Numbers in an Array
+function sumNumber (value){
+    let sumNum = 0
+    for(let i = 0; i < value.length; i++){
+        sumNum += value[i]
+    }
+    return sumNum;
+}
+// const result = sumNumber([11,3,33,22,44]);
+// console.log(result)
