@@ -102,5 +102,32 @@ const capitalize = (value) => {
     const res = valueSplit.map(v => v.charAt(0).toUpperCase() + v.slice(1))
     return res.join(' ')
 }
-const result = capitalize('nurislam hasan tonmoy');
-console.log(result)
+// const result = capitalize('nurislam hasan tonmoy');
+// console.log(result)
+
+// Find the Factorial of a Number
+function factorial(value){
+    let num = 1;
+    for(let i = 1; i <= value; i++){
+        num *= i
+    }
+    return num;
+}
+// const result = factorial(5);
+// console.log(result)
+
+// PingPong Challenge
+const pingPongChallenge = (value) => {
+    for(let i = 1; i <= value; i++){
+        if(i % 3 === 0 && i % 5 === 0){
+            console.log('pingPong')
+        }else if(i % 3 === 0){
+            console.log('ping')
+        }else if(i % 5 === 0){
+            console.log('pong')
+        }else{
+            console.log(i)
+        }
+    }
+}
+pingPongChallenge(5)
